@@ -4,10 +4,11 @@
   "main": "browzection.js",
   "scripts": {
     "clean": "gulp clean",
-    "b:copy": "gulp copy",
-    "b:babel": "gulp babel",
-    "w:babel": "gulp babel --watch",
-    "p:babel": "gulp babel --production",
+    "copy": "gulp copy",
+    "babel": "gulp babel",
+    "babel:w": "gulp babel --watch",
+    "babel:p": "gulp babel --production",
+    "pug": "gulp pug",
     "serve": "browser-sync start --config bs-config.js"
   },
   "config": {
@@ -75,6 +76,7 @@
     "gulp-if": "^2.0.1",
     "gulp-load-plugins": "^1.4.0",
     "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-strip-debug": "^1.1.0",
     "gulp-uglify": "^2.0.0",
