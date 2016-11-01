@@ -1,0 +1,23 @@
+{
+  "name": "browzection2",
+  "description": "HTML class wrote at confirm from User Agent",
+  "main": "",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artprojectteam/browzection2.git"
+  },
+  "keywords": [
+    "javascript",
+    "css",
+    "user",
+    "agent"
+  ],
+  "author": "Nobuyuki Kondo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artprojectteam/browzection2/issues"
+  },
+  "homepage": "https://github.com/artprojectteam/browzection2#readme"
+}
