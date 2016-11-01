@@ -3,6 +3,10 @@
   "description": "HTML class wrote at confirm from User Agent",
   "main": "browzection.js",
   "scripts": {
+    "start": "npm-run-all -p babel:w _def",
+    "build": "npm-run-all -s clean -p copy babel pug stylus",
+    "release": "npm-run-all -s clean -p copy babel:p pug stylus",
+    "_def": "gulp default",
     "clean": "gulp clean",
     "copy": "gulp copy",
     "babel": "gulp babel",
@@ -88,6 +92,7 @@
     "minimist": "^1.2.0",
     "node-notifier": "^4.6.1",
     "normalize-css": "^2.3.1",
+    "npm-run-all": "^3.1.1",
     "require-dir": "^0.3.1",
     "rimraf": "^2.5.4",
     "vinyl-buffer": "^1.0.0",
