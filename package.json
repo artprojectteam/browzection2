@@ -6,6 +6,7 @@
     "clean": "gulp clean",
     "b:copy": "gulp copy",
     "b:babel": "gulp babel",
+    "p:babel": "gulp babel --production",
     "serve": "browser-sync start --config bs-config.js"
   },
   "config": {

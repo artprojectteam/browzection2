@@ -2,6 +2,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 module.exports = function (ua) {
   'use strict';
 
+  void 0;
   return {
     aaa: '1',
     bbb: 'test'
