@@ -5,6 +5,7 @@
   "scripts": {
     "clean": "gulp clean",
     "b:copy": "gulp copy",
+    "b:babel": "gulp babel",
     "serve": "browser-sync start --config bs-config.js"
   },
   "config": {
@@ -27,8 +28,16 @@
       "html": "pug",
       "css": "stylus",
       "js": "babel"
-    }
+    },
+    "babelify": "browzection2.js"
   },
+  "browserify": {
+    "transform": [
+      "debowerify",
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/artprojectteam/browzection2.git"
@@ -61,15 +70,19 @@
     "gulp-babel": "^6.1.2",
     "gulp-changed": "^1.3.2",
     "gulp-copy": "0.0.2",
+    "gulp-if": "^2.0.1",
     "gulp-load-plugins": "^1.4.0",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-strip-debug": "^1.1.0",
     "gulp-uglify": "^2.0.0",
     "gulp-watch": "^4.3.10",
+    "minimist": "^1.2.0",
     "node-notifier": "^4.6.1",
     "require-dir": "^0.3.1",
     "rimraf": "^2.5.4",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
   }
 }

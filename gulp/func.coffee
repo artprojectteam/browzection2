@@ -14,11 +14,14 @@ module.exports =
         title: task + '--Task Error'
         sound: 'Glass'
     )
+  getEnvPro: ->
+    return @.args['production'] == true
   messages: (mes, color = $colors.yellow)->
     @.logs mes, color
   started: (task, mes = '')->
     @.logs $colors.green, "'#{task}' start... #{mes}"
   completed: (task, mes = '')->
-    @logs $colors.blue, "--'#{task}' completed !! #{mes}"
+    @.logs $colors.blue, "--'#{task}' completed !! #{mes}"
   logs: (color, mes)->
     console.log color + mes + $colors._reset
+  args: require('minimist')(process.argv.slice(2))
