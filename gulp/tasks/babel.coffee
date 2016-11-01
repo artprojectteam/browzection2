@@ -109,7 +109,7 @@ $ = $plugin.$
 
 
 g.task task.default, ->
-  watch = if $func.args['watch'] then true else false
+  watch = $func.args['watch'] == true
   isProduction = $func.getEnvPro()
 
   return doTranspile watch, isProduction

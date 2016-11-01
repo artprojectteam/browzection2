@@ -17,7 +17,7 @@ module.exports =
   getEnvPro: ->
     return @.args['production'] == true
   messages: (mes, color = $colors.yellow)->
-    @.logs mes, color
+    @.logs color, mes
   started: (task, mes = '')->
     @.logs $colors.green, "'#{task}' start... #{mes}"
   completed: (task, mes = '')->
