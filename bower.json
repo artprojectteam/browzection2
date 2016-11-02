@@ -1,0 +1,33 @@
+{
+  "name": "browzection2",
+  "description": "HTML class wrote at confirm from User Agent",
+  "main": "browzection2.js",
+  "authors": [
+    "Nobuyuki Kondo"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "css",
+    "user",
+    "agent"
+  ],
+  "homepage": "https://github.com/artprojectteam/browzection2",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "gulp",
+    "_ws",
+    "package.json",
+    "gulpfile.coffee",
+    ".*",
+    "bs-config.js"
+  ],
+  "dependencies": {
+    "fallback_method": "~1"
+  }
+}

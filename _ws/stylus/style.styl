@@ -1,0 +1,94 @@
+@charset "UTF-8"
+@import "../../node_modules/normalize-css/normalize.css"
+
+//===============================================
+// mixin & variable
+//===============================================
+breakpoint()
+  @media screen and (max-width: 767px)
+    {block}
+
+$space = 24px
+
+html
+  font-size: 16px
+
+body
+  font-family: "Helvetica Neue", sans-serif
+  font-size: 100%
+  color: #000000
+
+
+//===============================================
+// header
+//===============================================
+.header
+  padding: 0 $space
+  background: #ececec
+
+  &-title
+    margin: 0
+    padding: $space 0
+
+//===============================================
+// wrapper
+//===============================================
+.wrapper
+  padding: $space
+
+
+//===============================================
+// section
+//===============================================
+.section
+  display: table
+  width: 100%
+  +breakpoint()
+    display: block
+  &-title
+    margin: 0
+    padding: 0
+
+  &-cell
+    padding-bottom: 60px
+    display: table-cell
+    width: 50%
+    +breakpoint()
+      display: block
+      width: 100%
+
+
+  &-list
+    li
+      margin-bottom: 0.8em
+      line-height: 1.4
+      color: #999
+      &:last-child
+        margin-bottom: 0
+
+      &.true
+        color: #25a844
+
+
+//===============================================
+// Code
+//===============================================
+.code
+  background: #eeeeee
+  padding: $space
+
+.variable
+  color: #e36c2c
+  font-weight: 600
+
+.require
+  color: #7050bc
+
+
+//===============================================
+// Footer
+//===============================================
+.footer
+  background: #000000
+  color: #ffffff
+  padding: $space
