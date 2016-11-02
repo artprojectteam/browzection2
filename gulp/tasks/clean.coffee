@@ -12,7 +12,7 @@ g = $plugins.gulp
 
 # タスク実行
 g.task task.default, (callback)->
-  return $plugins.del ["#{$config.dest.demo}/#{$config.wildcard}/*", "#{$config.dest.output}/#{$config.wildcard}/*"], callback
+  return $plugins.del ["#{$config.dest.demo}/#{$config.wildcard}/*"], callback
 
 
 
