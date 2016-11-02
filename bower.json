@@ -1,7 +1,7 @@
 {
   "name": "browzection2",
   "description": "HTML class wrote at confirm from User Agent",
-  "main": "browzection2.js",
+  "main": "es6/browzection2.js",
   "authors": [
     "Nobuyuki Kondo"
   ],
@@ -25,7 +25,8 @@
     "package.json",
     "gulpfile.coffee",
     ".*",
-    "bs-config.js"
+    "bs-config.js",
+    "demo"
   ],
   "dependencies": {
     "fallback_method": "~1"

@@ -21,7 +21,8 @@
   "config": {
     "dest": {
       "demo": "demo",
-      "output": ""
+      "output": "dist",
+      "es6": "es6"
     },
     "wildcard": "/**",
     "colors": {

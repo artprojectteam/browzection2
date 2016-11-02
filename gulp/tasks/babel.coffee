@@ -133,6 +133,9 @@ g.task task.default, ->
   watch = $func.args['watch'] == true
   isProduction = $func.getEnvPro()
 
+  g.src files.default
+  .pipe g.dest "#{$config.dest.es6}/"
+
   return doTranspile watch, isProduction
 
 
