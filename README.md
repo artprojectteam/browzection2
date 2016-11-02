@@ -16,6 +16,10 @@ JavaScriptの変数として利用も可能
 
 ## install
 
+```
+bower install browzection2 --save
+```
+
 
 ## Used JavaScript
 
