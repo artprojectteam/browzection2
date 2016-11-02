@@ -3,8 +3,31 @@ html(lang="ja")
   head
     meta(charset="UTF-8")
     title Browzection2 Demo
+    meta(name="viewport", content="width=device-width,initial-scale=1")
+    link(href="style.css", rel="stylesheet", media="all")
 
   body
-    p test
+    header.header
+      h1.header-title Now access "User Agent" information (Use browzection2)
+
+    .wrapper
+      .section
+        - var _d = [{title: "Add Class List", _id: "add-class"}, {title: "JavaScript", _id: "detection"}]
+        each val in _d
+          .section-cell
+            h2.section-title= val.title
+
+            if (val._id == 'detection')
+              pre.code
+                code.code-content.
+                  <span class="variable">var</span> BRZ = <span class="require">require</span>('browzection2.js');
+
+            ul.section-list(id=val._id)
+
+
+    footer.footer
+      small.footer-copy &copy; Nobuyuki Kondo
 
     script(src="browzection2.min.js")
+    script(src="js/zepto.min.js")
+    script(src="js/demo.js")

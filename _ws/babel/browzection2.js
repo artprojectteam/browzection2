@@ -1,3 +1,10 @@
+/*!
+Now access browser information add html class
+@uri: https://github.com/artprojectteam/browzection2
+ 
+Copyright (c) 2016 Nobuyuki Kondo All Rights Reserved.
+This software is released under the MIT License, see LICENSE
+ */
 module.exports = (function(ua, appV){
   'use strict';
   
@@ -173,6 +180,7 @@ module.exports = (function(ua, appV){
   
   return {
     ua: ua,
+    app_version: appV,
     browser: browser,
     engine: engine,
     tablet: tablet,

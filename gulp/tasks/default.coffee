@@ -43,6 +43,9 @@ g.task 'start', ->
   g.watch T_css.files, ->
     g.start T_css.task.default
 
+  g.watch T_js.files.demo, ->
+    g.start T_js.task.demo
+
 
 
 

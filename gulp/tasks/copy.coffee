@@ -29,6 +29,7 @@ for key of extList
 
 # Babelは除外
 files.push "!#{$config.workspace.root}/#{$config.workspace.js}/**"
+files.push "!#{$config.workspace.root}/js/demo.js"
 
 
 # タスク名

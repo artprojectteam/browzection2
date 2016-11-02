@@ -16,12 +16,16 @@ files =
   watch: [
     "#{_ws}/**"
   ]
+  demo: [
+    "#{$config.workspace.root}/js/demo.js"
+  ]
 
 
 # タスク名
 task =
   default: 'babel'
   watch: 'babel:watch'
+  demo: 'demo_js'
 
 
 # export
@@ -103,6 +107,23 @@ doTranspile = (watch, isProduction)->
   return bundle()
 
 
+
+# 通常のbabelトランスパイル
+doNormalTranspaile = ()->
+  flg = true
+
+  return g.src files.demo
+  .pipe $.plumber
+    errorHandler: (err)->
+      flg = false
+      $func.notifier err, task.demo
+  .pipe $.babel getBabelOption
+  .pipe g.dest "#{$config.dest.demo}/js"
+  .on 'end', ->
+    if flg == true
+      $func.completed task.demo
+
+
 # タスク実行
 g = $plugin.gulp
 $ = $plugin.$
@@ -115,7 +136,9 @@ g.task task.default, ->
   return doTranspile watch, isProduction
 
 
-
+# demo用
+g.task task.demo, ->
+  return doNormalTranspaile()
 
 
 

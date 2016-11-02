@@ -406,6 +406,73 @@ table {
     border-spacing: 0;
 }
 
+html {
+  font-size: 16px;
+}
 body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 100%;
   color: #000;
+}
+.header {
+  padding: 0 24px;
+  background: #ececec;
+}
+.header-title {
+  margin: 0;
+  padding: 24px 0;
+}
+.wrapper {
+  padding: 24px;
+}
+.section {
+  display: table;
+  width: 100%;
+}
+.section-title {
+  margin: 0;
+  padding: 0;
+}
+.section-cell {
+  padding-bottom: 60px;
+  display: table-cell;
+  width: 50%;
+}
+.section-list li {
+  margin-bottom: 0.8em;
+  line-height: 1.4;
+  color: #999;
+}
+.section-list li:last-child {
+  margin-bottom: 0;
+}
+.section-list li.true {
+  color: #25a844;
+}
+.code {
+  background: #eee;
+  padding: 24px;
+}
+.variable {
+  color: #e36c2c;
+  font-weight: 600;
+}
+.require {
+  color: #7050bc;
+}
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 24px;
+}
+@media screen and (max-width: 767px){
+
+    .section{
+        display: block;
+    }
+
+    .section-cell{
+        display: block;
+        width: 100%;
+    }
 }

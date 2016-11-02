@@ -35,16 +35,14 @@ g.task task.default, ->
   flg = true
 
   return g.src files
-  .pipe $.plumber(
+  .pipe $.plumber
     errorHandler: (err)->
       flg = false
       $func.notifier err, task.default
-  )
-  .pipe $.pug(
+  .pipe $.pug
     doctype: 'html'
     pretty: true
     cache: true
-  )
   .pipe g.dest $config.dest.demo
   .on 'end', ->
     if flg == true

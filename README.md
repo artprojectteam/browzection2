@@ -11,6 +11,8 @@ JavaScriptの変数として利用も可能
 ※IE8以下古いブラウザに対応させる場合は[fallback_method.js](https://github.com/artprojectteam/fallback_method)などを利用してメソッドを対応させる必要があります<br>
 ※User Agentは偽装が可能なので取得データが正しいとは限らないので注意
 
+[デモページ](http://demo.artprojectteam.jp/browzection2/)
+
 
 ## install
 

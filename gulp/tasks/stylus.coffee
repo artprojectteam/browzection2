@@ -44,12 +44,11 @@ g.task task.default, ->
   flg = true
 
   return g.src files
-  .pipe $.plumber(
+  .pipe $.plumber
     errorHandler: (err)->
       flg = false
       $func.notifier err, task.default
       @.emit 'end'
-  )
   .pipe $.filenames 'stylus', {overrideMode: true}
   .pipe $.stylus
     'include css': true
