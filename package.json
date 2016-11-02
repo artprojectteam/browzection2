@@ -1,7 +1,7 @@
 {
   "name": "browzection2",
   "description": "HTML class wrote at confirm from User Agent",
-  "main": "browzection.js",
+  "main": "browzection2.js",
   "scripts": {
     "start": "npm-run-all -p babel:w _def",
     "build": "npm-run-all -s clean -p copy babel pug stylus demo_js",
@@ -15,6 +15,7 @@
     "babel:p": "gulp babel --production",
     "pug": "gulp pug",
     "stylus": "gulp stylus",
+    "eslint": "eslint _ws/babel/browzection2.js || true",
     "serve": "browser-sync start --config bs-config.js"
   },
   "config": {
