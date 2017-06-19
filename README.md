@@ -1,7 +1,5 @@
 # browzection2
 
-※[browzection](https://github.com/artprojectteam/browzection)のバージョンアップ版です
-
 User Agentを利用しアクセスしている主要なブラウザの情報をhtmlクラスに挿入
 JavaScriptの変数として利用も可能
 
@@ -18,6 +16,7 @@ JavaScriptの変数として利用も可能
 
 ```
 bower install browzection2 --save
+npm install browzection2 --save-dev
 ```
 
 

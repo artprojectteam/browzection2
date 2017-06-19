@@ -1,7 +1,7 @@
 {
   "name": "browzection2",
   "description": "HTML class wrote at confirm from User Agent",
-  "main": "browzection2.js",
+  "main": "es6/browzection2.js",
   "scripts": {
     "start": "npm-run-all -p babel:w _def",
     "build": "npm-run-all -s clean -p copy babel pug stylus demo_js",
