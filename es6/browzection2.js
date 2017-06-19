@@ -1,7 +1,7 @@
 /*!
 Now access browser information add html class
 @uri: https://github.com/artprojectteam/browzection2
- 
+
 Copyright (c) 2016 Nobuyuki Kondo All Rights Reserved.
 This software is released under the MIT License, see LICENSE
  */
@@ -16,7 +16,7 @@ module.exports = (function(ua, appV){
     isLikeMacOS = isIndexSearch('like mac os x');
   
   const no_suffix = 'no-';
-  let $html_class = [];
+  let html_class = [];
   
   
   /** IE */
@@ -105,10 +105,10 @@ module.exports = (function(ua, appV){
   
   setupClasses(os);
   
-  $html_class.push('js');
+  html_class.push('js');
   
   // <html> add class
-  let cls = $html_class.join(' '),
+  let cls = html_class.join(' '),
     html = document.getElementsByTagName('html');
   
   html[0].className += ' ' + cls;
@@ -173,7 +173,7 @@ module.exports = (function(ua, appV){
       let target = obj[keys],
         res = target ? keys : no_suffix + keys;
       
-      $html_class.push(res);
+      html_class.push(res);
     });
   }
   
