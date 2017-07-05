@@ -121,7 +121,7 @@ module.exports = (function(ua, appV){
    * @returns {boolean}
    */
   function isIndexSearch(str){
-    return ua.indexOf(str) > 0;
+    return ua.indexOf(str) >= 0;
   }
   
   /**
@@ -130,7 +130,7 @@ module.exports = (function(ua, appV){
    * @returns {boolean}
    */
   function isAppVersionSearch(str){
-    return appV.indexOf(str) > 0;
+    return appV.indexOf(str) >= 0;
   }
   
   /**
